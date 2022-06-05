@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+/* font-family: 'Fredoka', sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+font-family: 'Kalam', cursive; */
+
+.container {
+  max-width: 500px;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 7px 4px 29px -15px rgba(0, 0, 0, 0.75);
+  padding: 2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.singleReview {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.img-container {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  /* margin: 0 auto; */
+}
+
+.title h2 {
+  margin-top: 3.5em;
+  position: relative;
+  display: flex;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3.5rem;
+  font-family: "Fredoka", sans-serif;
+}
+.title h2::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #97d9e1;
+  width: 10%;
+  height: 100%;
+}
+.holder {
+  position: relative;
+}
+.quoteIcon {
+  background-color: lightskyblue;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1em;
+}
+.texts {
+  text-align: center;
+}
+.texts h4 {
+  padding: 0.1em 0;
+  font-size: 2rem;
+  font-family: "Great Vibes", cursive;
+}
+.texts .job {
+  color: lightskyblue;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.texts .info {
+  color: #111;
+  font-size: 1.3rem;
+  line-height: 1.2em;
+  font-family: "Kalam", cursive;
+  padding: 0.4em 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 0 0.6em;
+  cursor: pointer;
 }
